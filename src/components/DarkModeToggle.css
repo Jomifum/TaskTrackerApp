@@ -1,0 +1,12 @@
+.dark-mode-toggle {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #6457f9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,86 @@
+:root {
+  --background-color: #fff; /* Default light background */
+  --text-color: #000;
+  --button-background: #6457f9;
+  --card-background: #f9f9f9;
+}
+
+.dark-mode {
+  --background-color: #333;
+  --text-color: #ddd;
+  --button-background: #555;
+  --card-background: #444;
+}
+
+.light-green-background {
+  --background-color: #e8f5e9; /* Light green background */
+}
+
+/* Base Styles */
+.app {
+  display: grid;
+  grid-template-rows: 150px auto;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app_main {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 8%;
+}
+
+.task_column {
+  width: 33.33%;
+  margin: 20px;
+}
+
+/* Dark Mode Specific Styles */
+.dark-mode .task_input {
+  background: #444;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode .task_status {
+  background: #444;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode .task_submit {
+  background-color: #555;
+}
+
+.dark-mode .task_card {
+  background-color: #444;
+  color: #ddd;
+}
+
+.dark-mode .task_card_tags {
+  border: 1px solid #555;
+}
+
+.dark-mode .task_delete {
+  background-color: #555;
+}
+
+.dark-mode .delete_icon {
+  opacity: 80%;
+}
+
+/* Light Green Background Styles */
+.light-green-background .app {
+  background-color: #e8f5e9;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
